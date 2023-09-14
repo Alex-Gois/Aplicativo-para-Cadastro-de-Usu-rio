@@ -74,7 +74,13 @@ extension HomeVC: HomeScreenProtocol {
     func TappedAddButton() {
         print("Chegou na VC1")
         profile.append(Profile(imageProfile: homeScreen?.profileImage.image ?? UIImage()  , firstName: homeScreen?.nameTextField.text ?? "", lastName: homeScreen?.lastNameTextField.text ?? "", email: homeScreen?.emailTextField.text ?? ""))
+        homeScreen?.nameTextField.text = ""
+        homeScreen?.lastNameTextField.text = ""
+        homeScreen?.emailTextField.text = ""
+        homeScreen?.passwordTextField.text = ""
+        homeScreen?.profileImage.image = UIImage(systemName: "person.circle.fill")
         homeScreen?.tableView.reloadData()
+        
     }
 }
 
@@ -84,7 +90,6 @@ extension HomeVC: UIImagePickerControllerDelegate, UINavigationControllerDelegat
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             homeScreen?.profileImage.image = image
-            homeScreen?.profileImage.layer.borderWidth = 0.5
             homeScreen?.profileImage.layer.borderColor = UIColor.black.cgColor
             homeScreen?.profileImage.layer.cornerRadius = (homeScreen?.profileImage.frame.height ?? CGFloat()) / 2
             homeScreen?.profileImage.clipsToBounds = true
