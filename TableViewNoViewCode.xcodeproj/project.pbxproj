@@ -47,9 +47,9 @@
 			isa = PBXGroup;
 			children = (
 				14ED5CEF2AA3A28A00B758E9 /* Assets.xcassets */,
-				14ED5CF12AA3A28A00B758E9 /* LaunchScreen.storyboard */,
-				14ED5CE82AA3A28A00B758E9 /* SceneDelegate.swift */,
 				14ED5CE62AA3A28A00B758E9 /* AppDelegate.swift */,
+				14ED5CE82AA3A28A00B758E9 /* SceneDelegate.swift */,
+				14ED5CF12AA3A28A00B758E9 /* LaunchScreen.storyboard */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -73,7 +73,6 @@
 		14ED5CDA2AA3A28900B758E9 = {
 			isa = PBXGroup;
 			children = (
-				14ED5CF42AA3A28A00B758E9 /* Info.plist */,
 				14ED5CE52AA3A28900B758E9 /* TableViewNoViewCode */,
 				14ED5CE42AA3A28900B758E9 /* Products */,
 			);
@@ -90,6 +89,7 @@
 		14ED5CE52AA3A28900B758E9 /* TableViewNoViewCode */ = {
 			isa = PBXGroup;
 			children = (
+				14ED5CF42AA3A28A00B758E9 /* Info.plist */,
 				1421D2882AAA24D500A8084B /* Model */,
 				14ED5CFD2AA3B50F00B758E9 /* Extensions */,
 				14ED5CFA2AA3A4B100B758E9 /* HomeVC */,
